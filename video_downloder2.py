@@ -1,7 +1,7 @@
 import yt_dlp
 import os
 
-def download_youtube_video(url, output_path="downloads") :
+def download_youtube_video(url, output_path="video") :
     try:
         #Create output folder if it not having
         if not os.path.exists(output_path) :
