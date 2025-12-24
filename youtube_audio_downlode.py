@@ -25,7 +25,6 @@ def download_youtube_audio(url, output_path="./audio"):
         print(" Error :", e)
         
 
-# --- MAIN PROGRAM ---
 if __name__ == "__main__":
     url = input("YouTube video link : ").strip()
     download_youtube_audio(url)

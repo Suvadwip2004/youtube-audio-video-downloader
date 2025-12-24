@@ -20,8 +20,8 @@ A simple Python tool to download audio and video from YouTube. This project prov
 
 1. Clone this repository:
 ```bash
-git clone <your-repo-url>
-cd music_code
+git clone <https://github.com/Suvadwip2004/youtube-audio-video-downloader.git>
+cd FILE
 ```
 
 2. Install the required dependencies:
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-music_code/
+FILE/
 ├── youtube_audio_downlode.py    # Audio downloader script
 ├── youtube_video_downlode.py    # Video downloader script
 ├── audio/                        # Folder for downloaded audio files

@@ -1,16 +1,13 @@
 import os
 import yt_dlp  
 
-# YouTube URL (REPLACED as requested)
+
 URL  = input("Enter URL of youtube video : ")
-# URL = ""
-# TARGET directory
+
 OUTPUT_DIR = "video"
 
-# Create directory if it doesn't exist
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-# Present directory
-# OUTPUT_DIR = os.getcwd()
+
 
 def download_video(url):
     ydl_opts = {
