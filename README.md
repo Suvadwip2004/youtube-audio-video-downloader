@@ -40,6 +40,7 @@ pip install -r requirements.txt
 FILE/
 ├── youtube_audio_downlode.py    # Audio downloader script
 ├── youtube_video_downlode.py    # Video downloader script
+|── video_downloder2.py          # Video downloader script(V2)
 ├── audio/                        # Folder for downloaded audio files
 ├── video/                        # Folder for downloaded video files
 └── README.md                     # This file
@@ -68,6 +69,8 @@ YouTube video link : https://www.youtube.com/watch?v=VIDEO_ID
 
 Run the video downloader script:
 ```bash
+python video_downloder2.py
+or
 python youtube_video_downlode.py
 ```
 
@@ -90,7 +93,7 @@ Enter URL of youtube video : https://www.youtube.com/watch?v=VIDEO_ID
 - Converts the file extension to `.mp3`
 - Saves to the `./audio` directory
 
-### Video Downloader (`youtube_video_downlode.py`)
+### Video Downloader (`youtube_video_downlode.py or video_downloder2.py`)
 - Uses `yt-dlp` library (a fork of youtube-dl)
 - Downloads the best available video and audio streams
 - Merges them into a single MP4 file
