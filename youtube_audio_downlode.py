@@ -26,5 +26,5 @@ def download_youtube_audio(url, output_path="./audio"):
         
 
 if __name__ == "__main__":
-    url = input("YouTube video link : ").strip()
+    url = input("link : ").strip()
     download_youtube_audio(url)
