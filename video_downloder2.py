@@ -9,9 +9,17 @@ def download_youtube_video(url, output_path="video") :
 
         # yt_dlp options
         ydl_opts = {
-            'format': 'best',
+            # 'format': 'bestvideo+bestaudio/best',
+            # 'outtmpl': f'{output_path}/%(title)s.%(ext)s',
+            # 'noplaylist': True, # Download single video
+            'format': 'bestvideo+bestaudio/best',
             'outtmpl': f'{output_path}/%(title)s.%(ext)s',
-            'noplaylist': True, # Download single video
+            'noplaylist': True,
+
+            # 🔥 Important fixes
+            'merge_output_format': 'mp4',
+            'quiet': False,
+            'nocheckcertificate': True,
         }
 
         print(f"Attending to download: {url}")
