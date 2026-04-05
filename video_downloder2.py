@@ -39,6 +39,10 @@ def download_youtube_video(url, output_path="video") :
     except Exception as e:
         print(f"An error occured: {str(e)}")
 
-if __name__ == "__main__":
+def main():
     video_url = input("Enter the YouTube video URL: ")
     download_youtube_video(video_url)
+
+if __name__ == "__main__":
+    main()
+    print("Done")
